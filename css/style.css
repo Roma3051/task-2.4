@@ -1,0 +1,340 @@
+.container {
+    display: grid;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.create-account {
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 50px;
+    font-size: xxx-large;
+}
+
+.initials {
+    display: grid;
+    gap: 20px;
+}
+
+.first-n {
+    display: grid;
+    grid-area: 1;
+}
+
+.last-n {
+    display: grid;
+    grid-area: 1;
+}
+
+.email {
+    display: grid;
+}
+
+.password {
+    display: flex;
+    gap: 20px;
+}
+
+.attempt-1 {
+    flex: 1;
+}
+
+.attempt-2 {
+    flex: 1;
+}
+
+.gender-hobbies {
+    gap: 20px;
+    display: grid;
+}
+
+.gender {
+    grid-area: 1;
+}
+
+.hobbies {
+    grid-area: 1 / 3;
+}
+
+.income {
+    display: flex;
+    gap: 20px;
+}
+
+.source-income {
+    gap: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.earnings {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.coments {
+    display: grid;
+}
+
+.button-create {
+    text-align: end;
+}
+
+.comments {
+    display: grid;
+}
+
+.file-age {
+    display: flex;
+    gap: 20px;
+}
+
+.file {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.age {
+    flex: 1;
+}
+
+.button {
+    padding: 5px 60px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.button:hover {
+    background-color: rgb(81, 16, 141);
+}
+
+.hobbies-info {
+    display: flex;
+    gap: 10px;
+}
+
+.male-female {
+    display: flex;
+    gap: 10px;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid blueviolet;
+    outline: none;
+    color: blueviolet;
+}
+
+input[type=email]:focus {
+    border-color: yellowgreen;
+    color: yellowgreen;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid blueviolet;
+    outline: none;
+    color: blueviolet;
+}
+
+input[type=text]:focus {
+    border-color: yellowgreen;
+    color: yellowgreen;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid blueviolet;
+    outline: none;
+    color: blueviolet;
+}
+
+input[type=number]:focus {
+    border-color: yellowgreen;
+    color: yellowgreen;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid blueviolet;
+    outline: none;
+    color: blueviolet;
+}
+
+input[type=password]:focus {
+    border-color: yellowgreen;
+    color: yellowgreen;
+}
+
+input {
+    border-radius: 5px;
+    color: blueviolet;
+    padding: 10px;
+}
+
+select {
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #8a2be233;
+    padding: 7px;
+}
+
+textarea[name=bio] {
+    color: blueviolet;
+    resize: none;
+    box-sizing: border-box;
+    border: 1px solid blueviolet;
+    outline: none;
+}
+
+textarea[name=bio]:focus {
+    border-color: yellowgreen;
+    color: yellowgreen;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid blueviolet;
+    outline: none;
+    transition: background 0.3s;
+    margin-bottom: -6px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background: linear-gradient(to bottom right, blueviolet, rgb(202, 35, 160));
+    border-color: #cdaee9;
+}
+
+input[type="checkbox"]::before {
+    content: '\2713';
+    font-size: 16px;
+    color: violet;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+input[type="checkbox"]:checked::before {
+    opacity: 1;
+}
+
+input[type="checkbox"] + label {
+    cursor: pointer;
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid blueviolet;
+    outline: none;
+    transition: background 0.3s;
+    margin-bottom: -6px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background: linear-gradient(to bottom right, blueviolet, rgb(202, 35, 160));
+    border-color: #cdaee9;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, white, blueviolet);
+    border-radius: 5px;
+    border: none;
+    position: relative;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    border: 1px solid blueviolet;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: blueviolet;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .container, 
+    .initials, 
+    .password, 
+    .gender-hobbies,
+    .income,
+    .file-age {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type=file] {
+        width: 100%;
+    }
+
+    .button-create {
+        padding: 5px 30px;
+    }
+
+    .hobbies-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .male-female {
+        display: flex;
+        flex-direction: column;
+    }
+}

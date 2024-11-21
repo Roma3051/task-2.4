@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Create Account</title>          
+</head>
+<body>
+    <header>
+        <h1 class="create-account">Create Account</h1>
+    </header>
+    <main>
+        <form id="form">
+            <div class="container">
+                <div class="initials">
+                    <div class="first-n">
+                        <label for="first-name"><b>First name*</b></label>
+                        <input placeholder="Enter your first name" type="text" id="first-name" required>
+                        <div class="error"></div>
+                    </div>
+                    <div class="last-n">
+                        <label for="last-name"><b>Last name*</b></label>
+                        <input placeholder="Enter your last name" type="text" id="last-name" required>
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="email">
+                    <label for="email"><b>Email*</b></label>
+                    <input placeholder="Enter your email" type="email" id="email" name="email" required>
+                    <div class="error"></div>
+                </div>
+                <div class="password">
+                    <div class="attempt-1">
+                        <label for="password"><b>Password* </b></label>
+                        <input placeholder="password" type="password" id="password" name="password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,16}$"  title="Format: at least 8 characters, including uppercase and lowercase letters, number." required>
+                        <div class="error"></div>
+                    </div>
+                    <div class="attempt-2">
+                        <label for="confirm-password"><b>Confirm Password*</b></label>
+                        <input placeholder="Enter your confirm password" type="password" id="confirm-password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,16}$"  title="passwords don't match." required>
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="gender-hobbies">
+                    <div class="gender">
+                        <label for="male"><b>Gender:</b></label>
+                        <div class="male-female">
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hobbies">
+                        <label for="hobbies"><b>Hobbies:</b></label>
+                        <div class="hobbies-info">
+                            <div>
+                                <input type="checkbox" id="music" name="hobbies" value="music">
+                                <label for="music">Music</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="sports" name="hobbies" value="sports">
+                                <label for="sports">Sports</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="travel" name="hobbies" value="travel">
+                                <label for="travel">Travel</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="movies" name="hobbies" value="movies">
+                                <label for="movies">Movies</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="income">
+                    <div class="source-income">
+                        <label for="source-of-income"><b>Source of Income</b></label>
+                        <select name="source_of_income" id="source-of-income">
+                            <option value="university">University</option>
+                            <option value="football">Football</option>
+                            <option value="job">Job</option>
+                        </select>
+                    </div>
+                    <div class="earnings">
+                        <label for="income"><b>Income</b></label>
+                        <input type="range" id="income" min="10000" max="30000" step="1">
+                    </div>
+                </div>
+                <div class="file-age">
+                    <div class="file">
+                        <label for="upload-profile-picture">Upload Profile Picture</label>
+                        <input type="file" id="upload-profile-picture">  
+                    </div>
+                    <div class="age">
+                        <label for="age">Age*</label>
+                        <input type="number" id="age" min="0" max="150" required>
+                    </div>
+                </div>
+                <div class="comments">
+                    <label for="bio"><b>Bio</b></label>
+                    <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                </div>
+                <div class="button-create">
+                    <button type="submit" id="submit" class="button">Create</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
